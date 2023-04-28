@@ -5,8 +5,10 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
-  background-color: cornsilk;
+  background-color: rgba(247, 249, 249, 0.966);
 }
 
 .nav-links {
@@ -37,7 +39,7 @@ nav {
 
 /* Style nav items when active */
 .active-link {
-  color: coral !important;
+  color:royalblue !important;
 }
 
 button {
@@ -72,7 +74,7 @@ section div {
     left: -500px;
     transition: .5s;
     margin-right: auto;
-    background-color: cornsilk;
+    background-color: rgba(247, 249, 249, 0.966);
   }
 
   .nav-links li{
