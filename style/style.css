@@ -1,0 +1,108 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: cornsilk;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  font-size: large;
+  font-weight: 600;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: grey;
+  padding: 1em;
+  display: inline-block;
+  text-align: center;
+} 
+
+/* Hide hamburger icon for larger screen */
+.ham-burger {
+  display: none;
+}
+
+/* Style nav items when active */
+.active-link {
+  color: coral !important;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+section {
+  height: 500px;
+  margin-bottom: 30px;
+  color: dimgray;
+  padding-top: 80px;
+  text-align: center;
+}
+
+section div {
+  height: 600px;
+  background-color: aliceblue;
+}
+
+/* For smaller screen */
+@media screen and (max-width: 768px) {
+  nav {
+    top: 200px;
+  }
+
+  /* Style nav items for smaller screen */
+  .nav-links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: -500px;
+    transition: .5s;
+    margin-right: auto;
+    background-color: cornsilk;
+  }
+
+  .nav-links li{
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+
+  .nav-links.active{
+    left: 0;
+  }
+    
+  /* Style hamburger icon */
+  .ham-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1;
+    position: fixed;
+    right: 0;
+  }
+
+  /* Line to create hamburger icon */
+  .ham-burger-line {
+    width: 100%;
+    height: 4px;
+    background-color: darkslateblue;
+  }
+}
